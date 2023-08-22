@@ -1,10 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>My GitHub Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG Themed Park - Tales</title>
+    <style>
+        body {
+            font-family: "Arial", sans-serif;
+            background-color: #224422;
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+
+        #park {
+            border: 3px solid #fff;
+            background-image: url('https://placekitten.com/800/600'); /* Just a placeholder, replace with your desired RPG park image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 600px;
+            position: relative;
+        }
+
+        #sign {
+            background-color: #7B3F00;
+            border: 1px solid #5A2900;
+            padding: 20px;
+            width: 300px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #FFD700;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Welcome to my website</h1>
-    <p>This is a paragraph.</p>
+    <div id="park">
+        <div id="sign">
+            <h1>Welcome to Tales</h1>
+        </div>
+    </div>
 </body>
+
 </html>
