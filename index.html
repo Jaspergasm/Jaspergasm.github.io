@@ -4,51 +4,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RPG Themed Park - Tales</title>
+    <title>Coding for Beginners</title>
     <style>
         body {
-            font-family: "Arial", sans-serif;
-            background-color: #224422;
-            color: white;
-            text-align: center;
-            padding: 50px;
-        }
-
-        #park {
-            border: 3px solid #fff;
-            background-image: url('https://placekitten.com/800/600'); /* Just a placeholder, replace with your desired RPG park image */
-            background-size: cover;
-            background-repeat: no-repeat;
-            height: 600px;
-            position: relative;
-        }
-
-        #sign {
-            background-color: #7B3F00;
-            border: 1px solid #5A2900;
-            padding: 20px;
-            width: 300px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        }
-
-        h1 {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
             margin: 0;
-            font-size: 2.5em;
-            color: #FFD700;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 5px;
+        }
+
+        nav a {
+            color: #ffffff;
+            margin: 0 15px;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2, h3 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 20px;
         }
     </style>
 </head>
 
 <body>
-    <div id="park">
-        <div id="sign">
-            <h1>Welcome to Tales</h1>
-        </div>
+
+    <header>
+        <h1>Coding for Beginners</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Tutorials</a>
+        <a href="#">Resources</a>
+        <a href="#">About</a>
+    </nav>
+
+    <div class="container">
+        <h2>Welcome to Coding for Beginners</h2>
+        <p>Welcome to our coding platform designed especially for beginners. Here, you'll find a range of tutorials, resources, and insights to help you kick-start your coding journey.</p>
+
+        <h3>Why Learn Coding?</h3>
+        <p>Coding is the language of the future. Not only is it essential for the digital economy, but it also offers a range of career opportunities, from web development to software engineering and even data analysis.</p>
+
+        <h3>Getting Started</h3>
+        <p>For those new to coding, we recommend starting with our <a href="#">HTML and CSS tutorials</a>. Once you have a grasp on these foundational languages, you can move on to more advanced topics like JavaScript and Python.</p>
     </div>
+
 </body>
 
 </html>
