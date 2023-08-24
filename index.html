@@ -9,46 +9,41 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #0d1117; /* GitHub dark mode background color */
-            color: #c9d1d9; /* GitHub dark mode text color */
-            position: relative;
-            min-height: 100vh; /* Ensure footer placement */
+            background-color: #0d1117;
+            color: #c9d1d9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
         }
 
         header {
-            background-color: #161b22; /* Slightly lighter background for contrast */
+            background-color: #161b22;
             color: #c9d1d9;
             padding: 20px 0;
+            width: 100%;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
-            padding: 0 20px;
+            position: absolute;
+            top: 0;
+            left: 0;
         }
 
         header h1 {
             margin: 0;
-            display: flex;
-            align-items: center;
         }
 
         header h1 img {
             margin-right: 10px;
+            width: 48px; /* Increased size by 50% */
         }
 
-        button {
-            background-color: #238636; /* Green button like on GitHub */
-            color: #ffffff;
-            padding: 10px 20px; /* Increased size */
-            border: none;
-            border-radius: 25px; /* Rounded edges */
-            cursor: pointer;
-            font-size: 1em;
-            transform: scale(1.5); /* Increase button size */
-            transition: background-color 0.2s;
-        }
-
-        button:hover {
-            background-color: #2ea043; /* Slightly lighter on hover */
+        button.signup-top {
+            position: absolute;
+            right: 20px;
+            transform: scale(0.5);
         }
 
         section.content {
@@ -56,8 +51,7 @@
             justify-content: space-between;
             padding: 20px;
             max-width: 1000px;
-            margin: 40px auto;
-            background-color: #161b22; /* Box background */
+            background-color: #161b22;
             box-shadow: 0 0 10px rgba(0,0,0,0.5);
         }
 
@@ -74,6 +68,13 @@
         form input, form button {
             padding: 10px;
             margin-bottom: 10px;
+            width: 100%;
+        }
+
+        form button {
+            width: auto;
+            transform: none;
+            background-color: #238636;
         }
 
         footer {
@@ -89,8 +90,8 @@
 </head>
 <body>
     <header>
-        <h1><img src="https://pbs.twimg.com/profile_images/1384636726400880640/Z0I1RrMH_400x400.jpg" alt="Logo" width="32"> Coding for Beginners</h1>
-        <button>Sign Up</button>
+        <h1><img src="https://pbs.twimg.com/profile_images/1384636726400880640/Z0I1RrMH_400x400.jpg" alt="Logo"> Coding for Beginners</h1>
+        <button class="signup-top">Sign Up</button>
     </header>
 
     <section class="content">
@@ -111,7 +112,7 @@
     </section>
 
     <footer>
-        Copyright &copy; 2023 [Your Name] | All Rights Reserved
+        Copyright &copy; 2023 Heybaton | All Rights Reserved
     </footer>
 </body>
 </html>
