@@ -20,30 +20,46 @@
 
         header {
             background-color: #161b22;
-            color: #c9d1d9;
             padding: 20px 0;
             width: 100%;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
             position: absolute;
             top: 0;
             left: 0;
+            padding: 0 20px;
         }
 
         header h1 {
             margin: 0;
+            left: 20px;
+            display: flex;
+            align-items: center;
         }
 
         header h1 img {
             margin-right: 10px;
-            width: 48px; /* Increased size by 50% */
+            width: 48px;
+        }
+
+        header .centered-title {
+            margin: 0;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
         }
 
         button.signup-top {
-            position: absolute;
-            right: 20px;
-            transform: scale(0.5);
+	    align-self: center;
+            transform: scale(0.8); 
+            background-color: #238636;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 25px; /* rounder borders */
+            font-weight: bold; /* bold text */
         }
 
         section.content {
@@ -53,6 +69,7 @@
             max-width: 1000px;
             background-color: #161b22;
             box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            font-size: 1.3em; 
         }
 
         section.content > div {
@@ -69,11 +86,11 @@
             padding: 10px;
             margin-bottom: 10px;
             width: 100%;
+            box-sizing: border-box;
         }
 
         form button {
-            width: auto;
-            transform: none;
+            width: 100%;
             background-color: #238636;
         }
 
@@ -90,7 +107,8 @@
 </head>
 <body>
     <header>
-        <h1><img src="https://pbs.twimg.com/profile_images/1384636726400880640/Z0I1RrMH_400x400.jpg" alt="Logo"> Coding for Beginners</h1>
+        <h1><img src="https://pbs.twimg.com/profile_images/1384636726400880640/Z0I1RrMH_400x400.jpg" alt="Logo"></h1>
+        <h2 class="centered-title">Coding for Beginners</h2>
         <button class="signup-top">Sign Up</button>
     </header>
 
@@ -112,7 +130,7 @@
     </section>
 
     <footer>
-        Copyright &copy; 2023 Heybaton | All Rights Reserved
+        Copyright &copy; 2023 [Your Name] | All Rights Reserved
     </footer>
 </body>
 </html>
