@@ -139,7 +139,7 @@
                 <input type="text" name="name" placeholder="Full Name" required>
                 <input type="email" name="email" placeholder="Email Address" required>
                 <input type="password" name="password" placeholder="Password" required>
-                <button type="submit">Sign Up</button>
+                <button type="submit" id="submit">Sign Up</button>
             </form>
         </div>
     </section>
@@ -148,4 +148,41 @@
         Copyright &copy; 2023 [Your Name] | All Rights Reserved
     </footer>
 </body>
+<script>
+document.getElementById("submit").addEventListener("submit", function(e){
+    e.preventDefault(); // prevents the form from making a traditional post request
+
+    let fullName = document.querySelector("[name='name']").value;
+    let email = document.querySelector("[name='email']").value;
+    let password = document.querySelector("[name='password']").value;
+    let records = [];
+
+    let data = {
+        "fields": {
+            "Full Name": fullName, 
+            "Email Address": email, 
+            "Password": password
+        }
+    };
+    records.push(data)
+
+    fetch("https://api.airtable.com/v0/appK0aLWBtj4m8CeJ/tbl1hSzIkERPdlETX", {
+        method: "POST",
+        headers: {
+            "Authorization": "Bearer pat2NLts5t5DYFp3t",
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(records)
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+        // Handle success - maybe show a message to the user
+    })
+    .catch(error => {
+        console.error("There was an error!", error);
+        // Handle error - maybe show a message to the user
+    });
+})
+</script>
 </html>
