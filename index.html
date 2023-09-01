@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6Z7728646H"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-6Z7728646H');
-</script>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coding for Beginners</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6Z7728646H"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-6Z7728646H');
+    </script>
+
     <style>
         * {
             box-sizing: border-box;
@@ -63,8 +67,8 @@
         }
 
         button.signup-top {
-	    align-self: center;
-            transform: scale(0.8); 
+            align-self: center;
+            transform: scale(0.8);
             background-color: #238636;
             color: #fff;
             border: none;
@@ -80,8 +84,8 @@
             padding: 20px;
             max-width: 1000px;
             background-color: #161b22;
-            box-shadow: 0 0 10px rgba(0,0,0,0.5);
-            font-size: 1.3em; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            font-size: 1.3em;
             width: 100%;
         }
 
@@ -99,7 +103,8 @@
             flex-direction: column;
         }
 
-        form input, form button {
+        form input,
+        form button {
             padding: 10px;
             margin-bottom: 10px;
             width: 100%;
@@ -120,7 +125,31 @@
         }
     </style>
 </head>
+
 <body>
+    <script type="text/javascript">
+        var _cio = _cio || [];
+        (function() {
+            var a, b, c;
+            a = function(f) {
+                return function() {
+                    _cio.push([f].concat(Array.prototype.slice.call(arguments, 0)))
+                }
+            };
+            b = ["load", "identify", "sidentify", "track", "page"];
+            for (c = 0; c < b.length; c++) {
+                _cio[b[c]] = a(b[c])
+            };
+            var t = document.createElement('script'),
+                s = document.getElementsByTagName('script')[0];
+            t.async = true;
+            t.id = 'cio-tracker';
+            t.setAttribute('d415a215fb9f8101c052', '12af47cf8c4d1c332ba5');
+            t.src = 'https://assets.customer.io/assets/track.js';
+            s.parentNode.insertBefore(t, s);
+        })();
+    </script>
+
     <header>
         <h1><img src="https://pbs.twimg.com/profile_images/1384636726400880640/Z0I1RrMH_400x400.jpg" alt="Logo"></h1>
         <h2 class="centered-title">Coding for Beginners</h2>
@@ -147,8 +176,9 @@
     <footer>
         Copyright &copy; 2023 [Your Name] | All Rights Reserved
     </footer>
+
     <script>
-       document.getElementById("signupForm").addEventListener("submit", function(e) {
+        document.getElementById("signupForm").addEventListener("submit", function(e) {
             e.preventDefault();
 
             let fullName = document.querySelector("[name='name']").value;
@@ -183,6 +213,5 @@
         });
     </script>
 </body>
-</html>
-</script>
+
 </html>
